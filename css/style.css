@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+:root{
+    --pageAllFont: 'Poppins', sans-serif;
+}
+
 body {
   background: linear-gradient(#851010, black);
   background-repeat: no-repeat;
