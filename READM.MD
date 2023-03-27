@@ -40,3 +40,8 @@ Verificar se de fato a alteração subiu
 Atualiza todo o repositório
 ```
  
+### git merge
+
+```
+Vai trazer tudo que estiver em um branch para o atual
+```
