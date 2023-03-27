@@ -8,6 +8,8 @@
 
 :root{
     --pageAllFont: 'Poppins', sans-serif;
+    --btn-color: #db9317;
+    --text-color: white;
 }
 
 body {
@@ -19,7 +21,14 @@ body {
   font-family: var(--pageAllFont);
 }
 
+<<<<<<< HEAD
 /* 
+=======
+.imageMenu{
+    width: 140px;
+}
+
+>>>>>>> developer
 
 ====================MENU=====================
 */
@@ -28,7 +37,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 90px;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
 }
 
 .navigation{
@@ -36,8 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    width: 80%;
+    width: 85%;
 }
 
 .imageMenu{
@@ -50,19 +58,27 @@ body {
 
 }
 .links-menu li{
+<<<<<<< HEAD
     margin-left: 1.5rem;
 }
 
 .links-menu li a{
    color: white;
+=======
+    margin-left: 2.3rem;
+}
+.links-menu li a{
+   color: var(--text-color);
+>>>>>>> developer
 }
 
 
 .links-menu li a.btn-login{
     padding: 0.5rem 1.5rem;
     border-radius: 3px;
-    background: white;
-    color: black;
+    background: var(--text-color);
+    font-weight: bold;
+    color:var(--btn-color);
 }
 
 /* 
@@ -70,38 +86,43 @@ body {
 ===============Hero======================
 */
 
-.hero{
-  text-align: center;
-}
-.box{
+#hero{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
 }
 
-.hero .box-hero-section{
-    width: 80%;
+#hero .box-hero{
+    width: 85%;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
-.hero .box-hero-section .text{
-    width: 80%; 
-}
-.hero .box-hero-section .text h2{
-    font-size: 2.2rem;
-    text-align: left;
+#hero .box-hero .text h2{
+    margin-top: -3rem;
+    line-height: 40px;
+   color: var(--text-color);
+   font-size: 1.5rem;
+   margin-bottom: 30px;
 }
 
-.hero .box-hero-section .imagem{
-   width: 30%;
-   margin-top: 30px;
-
+#hero .box-hero .text button{
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  color: var(--btn-color);
+  font-weight: bold;
 }
-.hero .box-hero-section .image img{
-   width: 93%;
-    margin-left: 90px;
+
+
+#hero .image {
+    margin-left: .7rem;
+}
+#hero .image img{
+    width: 430px;
 }
