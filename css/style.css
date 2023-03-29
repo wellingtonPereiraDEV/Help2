@@ -21,89 +21,70 @@ body {
   font-family: var(--pageAllFont);
 }
 
-.imageMenu{
-    width: 140px;
-}
-
-
-.top{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 90px;
-    margin-top: 1.2rem;
-}
-
-.navigation{
-    height: 90px;
+#top-mobile{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    padding: 0.5rem;
+    height: 93px;
 }
 
-.links-menu{
-    display: flex;
+#top-mobile img{
+    width: 8.8rem;
+}
 
+#top-mobile ion-icon{
+    font-size: 1.8rem;
+    color: var(--btn-color);
 }
-.links-menu li{
-    margin-left: 2.3rem;
+
+/* ===================HERO========================= */
+.box-hero{
+    margin-top: calc(2px + 83px);
+    height: 80vh;
 }
-.links-menu li a{
+
+.box-hero .text{
+    text-align: center;
+}
+
+.box-hero .text h2{
+   color: var(--text-color);
+   margin-bottom: 130px;
+   display: flex;
+   font-size: 2.3rem;
+}
+
+.box-hero .text button{
+   color: var(--btn-color);
+   padding: 0.8rem;
+   width: 90%;
+   font-weight: bold;
+}
+
+.box-hero .image{
+    display: none;
+}
+
+/* ==============about=================== */
+#about{
+    width: 100%;
+}
+
+
+.about-text h2{
+   text-align: center;
    color: var(--text-color);
 }
 
+.about-image{
+    display: none;
+}
 
-.links-menu li a.btn-login{
-    padding: 0.5rem 1.5rem;
-    border-radius: 3px;
-    background: var(--text-color);
+#about .title-section{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
     font-weight: bold;
-    color:var(--btn-color);
-}
-
-/* 
-
-===============Hero======================
-*/
-
-#hero{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hero .box-hero{
-    width: 85%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-#hero .box-hero .text h2{
-    margin-top: -3rem;
-    line-height: 40px;
-   color: var(--text-color);
-   font-size: 1.5rem;
-   margin-bottom: 30px;
-}
-
-#hero .box-hero .text button{
-  width: 40%;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  color: var(--btn-color);
-  font-weight: bold;
-}
-
-
-#hero .image {
-    margin-left: .7rem;
-}
-#hero .image img{
-    width: 430px;
 }
