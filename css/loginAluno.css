@@ -1,11 +1,16 @@
 img {
     width: 250px;
     float: none;
-
+       
 }
 
 body {
     background-color: #851010;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    
 }
 
 h1 {
@@ -14,7 +19,7 @@ h1 {
     text-align: right;
     font-size: 20px;
     padding: 15px;
-    
+
 }
 
 section {
@@ -24,13 +29,20 @@ section {
 button {
     width: 1000px;
     height: 50px;
+    font-family: poppins;
     font-size: 32px;
     font-style: bold;
     text-align: center;
+    text-shadow: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 200px;
+    border-color: #FFFFFF;
+    vertical-align: bottom;
+    width: 508px;
+    height: 61px;
 
 
 
