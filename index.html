@@ -11,41 +11,65 @@
     <title>Help</title>
 </head>
 <body>
-    <header id="top-mobile">
-        <img src="./assets/bookMenu.svg" alt="">
-        <ion-icon name="menu-outline"></ion-icon>
-    </header>
+  <!-- Desktop Menu -->
+  <div class="toogleResponsivoDesktop">
+      <header id="desktop">
+        <nav id="BoxDesktop">
+            <img src="./assets/bookMenu.svg" alt="">
+    
+            <ul id="linksDesktop">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li onclick="habilitarModal()"><a class="active" href="#">Login</a></li>
+            </ul>
+        </nav>
+      </header>
+  </div>
 
-    <section id="hero">
-        <div class="box-hero">
-            <div class="text">
-                <h2>Conectamos alunos
-                    da rede púplica 
-                    com professores
-                    particulares</h2>
-                    <button>Cadastre-se</button>
-            </div>
-            <div class="image">
-                <img src="./assets/boyStudants.svg" alt="">
-            </div>
-        </div>
-    </section>
+  <div class="toogleResponsivoMobile">
+      <header id="mobile">
+        <nav id="BoxMobile">
+            <img src="./assets/bookMenu.svg" alt="">
+            <ion-icon onclick="abrirMenu()" name="menu-outline"></ion-icon>
+        </nav>
+      </header>
 
-    <section id="about">
-       <div class="title-section">Sobre nós</div>
-        <div class="box-about">
-            <div class="about-text">
-                <h2>O ensino público tem deixado muito a desejar nas pesquisas
-                    de desempenho e foi pensando nisso que o helpe trouxe uma solução colaborativa entre instituições e metodologias
-                </h2>
-            </div>
-            <div class="about-image"> 
-                <img src="./assets/aboutImage.svg" alt="">
-            </div>
+      <div class="boxMenuMobile telaEscondida">
+          <ul id="linksMobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li onclick="habilitarModal()"><a class="active" href="#">Login</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <section id="hero">
+    <div class="flex-hero">
+        <div class="flex-text">
+            <h2>Conectamos alunos
+                da rede púplica 
+                com professores
+                particulares</h2>
+                <button>Cadastrar-se</button>
         </div>
-    </section>
+        <div class="flex-image">
+            <img src="./assets/boyStudants.svg" alt="">
+        </div>
+    </div>
+  </section>
+
+  <div class="modalSelect telaEscondida">
+    <div class="box-modal">
+        <h2>Escolha o tipo de login</h2>
+        <div class="btn-login-action">
+            <a class="prof" href="#">Professor</a>
+            <a class="aluno" href="loginAluno.html">Aluno</a>
+        </div>
+    </div>
+  </div>
    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
