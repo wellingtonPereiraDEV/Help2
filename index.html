@@ -11,40 +11,65 @@
     <title>Help</title>
 </head>
 <body>
-    <header class="top">
-        <nav class="navigation">
-            <img class="imageMenu" src="./assets/bookMenu.svg" alt="">
-
-            <ul class="links-menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
-                </li>
-                <li>
-                    <a class="btn-login" href="#">Login</a>
-                </li>
+  <!-- Desktop Menu -->
+  <div class="toogleResponsivoDesktop">
+      <header id="desktop">
+        <nav id="BoxDesktop">
+            <img src="./assets/bookMenu.svg" alt="">
+    
+            <ul id="linksDesktop">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li onclick="habilitarModal()"><a class="active" href="#">Login</a></li>
             </ul>
         </nav>
-    </header>
+      </header>
+  </div>
+
+  <div class="toogleResponsivoMobile">
+      <header id="mobile">
+        <nav id="BoxMobile">
+            <img src="./assets/bookMenu.svg" alt="">
+            <ion-icon onclick="abrirMenu()" name="menu-outline"></ion-icon>
+        </nav>
+      </header>
+
+      <div class="boxMenuMobile telaEscondida">
+          <ul id="linksMobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li onclick="habilitarModal()"><a class="active" href="#">Login</a></li>
+        </ul>
+      </div>
+  </div>
 
   <section id="hero">
-    <div class="box-hero">
-        <div class="text">
+    <div class="flex-hero">
+        <div class="flex-text">
             <h2>Conectamos alunos
                 da rede púplica 
                 com professores
                 particulares</h2>
                 <button>Cadastrar-se</button>
         </div>
-        <div class="image">
+        <div class="flex-image">
             <img src="./assets/boyStudants.svg" alt="">
         </div>
     </div>
   </section>
+
+  <div class="modalSelect telaEscondida">
+    <div class="box-modal">
+        <h2>Escolha o tipo de login</h2>
+        <div class="btn-login-action">
+            <a class="prof" href="#">Professor</a>
+            <a class="aluno" href="loginAluno.html">Aluno</a>
+        </div>
+    </div>
+  </div>
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>

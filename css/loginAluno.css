@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --pageAllFont: 'Poppins', sans-serif;
+    --btn-color: #db9317;
+    --text-color: white;
+}
+
+body {
+  background: linear-gradient(#851010, black);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--pageAllFont);
+}
+
+#top-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 93px;
+}
+
+#top-mobile #box{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 93px;
+    align-items: center;
+}
+
+#top-mobile img{
+    width: 130px;
+}
+
+#top-mobile h2{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+#top-mobile .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#top-mobile .user ion-icon{
+    color: white;
+    font-weight: bold;
+}
+
+
+#heroAluno{
+    width: 100%;
+}
+
+#heroAluno .grid-aluno{
+   width: 90%;
+   margin-inline: auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+#heroAluno .imageAluno{
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+#heroAluno .imageAluno img{
+    width: 100%;
+}
+
+#heroAluno .btnAluno{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#heroAluno .btnAluno button{
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* ==================desktop============ */
+@media (min-width:800px) {
+  
+
+    #heroAluno{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #heroAluno .grid-aluno{
+       width: 70%;
+       margin-inline: auto;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+    }
+
+    
+
+    #heroAluno .imageAluno{
+        width: 50%;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 60px;
+        order: 3;
+    }
+
+    #heroAluno .btnAluno{
+        width: 50%;
+        order: 2;
+    }
+
+    #heroAluno .imageAluno img{
+        width: 100%;
+    }
+
+    #heroAluno .btnAluno button{
+        width: 100%;
+        padding: 0.7rem;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
